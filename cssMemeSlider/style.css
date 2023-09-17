@@ -15,8 +15,10 @@ body {
 }
 
 img {
-  max-width: 900px;
-  max-height: 600px;
+  /* max-width: 900px;
+  max-height: 600px; */
+  width: 900px;
+  height: 570px;
 }
 
 .slider__wraper {
@@ -69,6 +71,18 @@ img {
   background-color: white;
 }
 
+.slide__fl {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  /* line-height: 20px;
+  letter-spacing: 2px; */
+}
+
 input[name="radio"] {
   position: absolute;
   visibility: hidden;
@@ -83,7 +97,13 @@ input[name="radio"] {
   margin-left: -100%;
 }
 
+#r3:checked~.slides {
+  margin-left: -200%;
+}
 
+#r4:checked~.slides {
+  margin-left: -300%;
+}
 
 @media screen and (max-width: 1024px) {
   .slider__wraper {
@@ -101,8 +121,6 @@ input[name="radio"] {
     align-items: center;
   }
 
-  .text {
-    align-self: flex-start;
-  }
+
 
 }
